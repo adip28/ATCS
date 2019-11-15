@@ -17,10 +17,10 @@ namespace ReceiveRmqAndSaveMongoDb
         static void Main(string[] args)
         {
             ConnectionFactory factory = new ConnectionFactory();
-            factory.UserName = "atcs_lampung";
-            factory.Password = "atcslampung123!";
-            factory.VirtualHost = "/atcs_lampung";
-            factory.HostName = "rmq2.pptik.id";
+            factory.UserName = "xx";
+            factory.Password = "xx!";
+            factory.VirtualHost = "/xx";
+            factory.HostName = "localhost";
             
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())
